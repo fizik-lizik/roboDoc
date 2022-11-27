@@ -36,7 +36,8 @@
         background-color: rgb(5, 2, 21);
     }
     .txt h1{
-        font-size: 70px;
+        /* font-size: 70px; */
+        font-size: 5vw;
         font-family: 'Onest Black' ;
         color: white;
         /* width: 46.27%; */
@@ -45,7 +46,8 @@
         margin-bottom: 3%;
     }
     .txt p{
-        font-size: 23.7px;
+        /* font-size: 23.7px; */
+        font-size: 1.75vw;
         font-family: 'Open Sans',sans-serif ;
         color: white;
         /* width: 42%; */
@@ -57,29 +59,44 @@
         text-align: justify
     }
     main{
-        background-color: rgb(255, 255, 255);
+        background-color: white;
         width:auto;
         height: 100vh;
+        padding: 5vh;
+        box-sizing: border-box;
+    }
+    .mainMenu{
+        background: linear-gradient(#90d2e8, rgb(5, 2, 21));
+        height: 90vh;
     }
     .block1{
         display: flex;
     }
-    @media (max-width:425px){
+    @media (max-width:1000px){
         .block1{
             flex-wrap: wrap-reverse;
+            /* flex-direction: column; */
         }
         .txt{
             width: 100%;
-            height: fit-content;
+            height: fit-content;            
         }
         header{
             width: 100%;
+            padding-top: 40px;
+            background-origin: content-box;
         }
         .polosa {
         margin-left: 1%;
         padding-top: 11%;
         background-clip:border-box ;
-    }
+        }
+        .txt p{
+            font-size: 23.7px;
+        }
+        .txt h1{
+            font-size: 50px;
+        }
     }
 </style>
 </head>
@@ -104,6 +121,9 @@
         </div>
     </div>
     <main>
+        <div class="mainMenu">
+
+        </div>
 
     </main>
     
