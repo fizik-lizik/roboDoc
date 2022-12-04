@@ -66,9 +66,51 @@
         box-sizing: border-box;
     }
     .mainMenu{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
         background: linear-gradient(#90d2e8, rgb(5, 2, 21));
         height: 90vh;
     }
+    .mainMenu figure{
+        /* outline: 1px solid black; */
+        width: 22%;
+        height: 70%;
+        margin: 0;
+        margin: 0 1%;
+        position: relative;
+    }
+    .mainMenu figure img{
+        width: 100%;
+        height: 90%;
+        object-fit: contain ;
+    }
+    .mainMenu figure figcaption{
+        color: white;
+        font-family: 'Onest Black'  ;
+        text-align: center;
+        font-size: 1.7vw;
+        margin-top: -10%;
+    }
+    .mainMenu figure:hover{
+        outline: 2px solid white;
+        transform: scale(1.2);
+        transition: transform 300ms;
+    }
+    .mainMenu figure:first-child:hover{
+        transform: scale(1.2) translateX(7%);
+    }
+    .mainMenu figure:last-child:hover{
+        transform: scale(1.2) translateX(-6%);
+    }
+    .mainMenu figure:last-child{
+        margin-left: auto;
+        margin-right: 2.5%;
+    }
+    .mainMenu figure:nth-child(3){
+        margin-left: 2%;
+    }
+
     .block1{
         display: flex;
     } 
@@ -138,7 +180,22 @@
     </div>
     <main>
         <div class="mainMenu">
-
+            <figure> 
+                <img src="биопринте.png" alt="">
+                <figcaption>БИОПРИНТЕР</figcaption>
+            </figure>
+            <figure>
+                <img src="психолог киробо.png" alt="">
+                <figcaption>ПСИХОЛОГ</figcaption>
+            </figure>
+            <figure>
+                <img src="стоматолог.png" alt="">
+                <figcaption>СТОМАТОЛОГ</figcaption>
+            </figure>
+            <figure>
+                <img src="хирург.png" alt="">
+                <figcaption>ХИРУРГ</figcaption>
+            </figure>
         </div>
 
     </main>
