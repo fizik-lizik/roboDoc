@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Робот-хирург</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        header{
+            display: flex;
+            background-color: rgb(5, 2, 21);
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
+        header a{
+            margin-left: 10px;
+
+        }
+        header img{
+            width: 100px;
+        }
+        header h1{
+            margin: auto;
+            font-family:  'Onest Black';
+            font-size: 4vw;
+            color: white;
+        }
+        main{
+            height: 80vh;
+            background: linear-gradient(white, #6cc3f5);
+            padding-bottom:  0;
+        }
+        main img{
+            display: block;
+            width: 50%;
+            margin-left: auto;
+            
+        }
+        main{
+          display: flex;  
+          align-items: center;
+        }
+        main p{
+            padding-left: 20px ;
+            padding-right: 10px;
+            margin-top: 0 !important;
+            margin-bottom: 10%;
+            font-family: 'Open Sans',sans-serif;
+            font-size: 23.7px;
+        }
+        .circle img{
+            transform: scale(0.8);
+        }
+        .circle{
+            display: flex; 
+            align-items: center;
+            font-size: 28px;
+            font-family:  'Onest Bold';
+            background-color: rgb(5, 2, 21);
+            margin: 5vh;
+        }
+        .circle dl{
+            background-color: #03b6ce;
+            transform: scale(0.9);
+        }
+        .circle dt{
+            padding: 30px  ;
+            font-family:  'Onest Black';
+        }
+        .stroenie{
+            margin-top: 8%;
+            margin-bottom: 10%;
+        }
+        .stroenie h2{
+            margin: auto;
+            font-family:  'Onest Black';
+            font-size: 3.5vw;
+            color: rgb(5, 2, 21);
+            margin-bottom: 3%;
+            text-align: center;
+            background-color: #6cc3f5 ;
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+        .stroenie img{
+            display: block;
+            /* margin-left: auto; */
+            margin-right: auto;
+            width: 50vw;
+            margin-left: 50px;
+        }
+        .stroenie div{
+            display: flex;
+            transform: scale(0.9);
+            font-size: 28px;
+            font-family:  'Onest Bold';
+            margin: 5vh;
+            align-items: center;
+            margin-right: 20px;
+        }
+        .stroenie p{
+            padding: 10px 10px 10px 10px;
+            background-color: #6cc3f5 ;
+        }
+        @media (max-width:475px){
+            main{
+                flex-direction: column;
+                padding: 40px 0 20px 0;
+                height: fit-content;
+            }
+            main p{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            main img{
+                width: 100%;
+            }
+            header h1{
+                font-size: 30px;
+            }
+            header img{
+                transform: scale(0.75);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html#home">
+            <img src="robot1.png" alt="">
+        </a>
+        <h1>Робот-хирург</h1>
+    </header>
+    <main>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Delectus hic vel vitae maiores quas sunt sed quam optio quaerat perspiciatis.
+        </p>
+        <img src="hir.png" alt="">
+    </main>
+    <section class="circle">
+        <img src="хирург3.png" alt="">
+        
+          <dl>
+            <dt>Преимущества робота-хирурга: </dt>
+            <dd>Большая хирургическая точность</dd>
+            <dd>Лучшая визуализация, включая труднодоступные области</dd>
+            <dd>Увеличенный диапазон движения</dd>
+            <dd>Контроль усталости рук</dd>
+            <dd>Меньшее количество осложнений</dd>
+            <dd>Быстрое восстановление после операции</dd>
+            <dd>Доступ к труднодоступным областям</dd>
+            <dt></dt>
+          </dl>
+    </section>
+    <section class="stroenie">
+        <h2>Строение робота</h2>
+        <div>
+            <p>Инструменты имеют семь степеней свободы с возможностью гнуться на 90 градусов. 
+                В роботе Да Винчи предусмотрена система подавления дрожания рук, укорочена кривая облучения 
+                и повышена трансформация движения руки до недоступных человеческой руке пределов. 
+                Увеличенный радиус использования приборов дает возможность проводить
+                 операции в ограниченных пространствах (малый таз, сердечная сумка, средостение),
+                 улучшив доступ и повысив надежность хирургического воздействия.</p>
+            <img src="schema.png" alt="">            
+        </div>
+        <div>
+            <img src="minimally-invasive-robotic-surgery-instruments-75060-113295.jpg" alt="">
+            <p>
+                У робота Да Винчи четыре манипулятора.
+                Это почти то же самое, как если бы у хирурга было четыре руки.
+            </p>
+        </div>
+    </section>
+    <footer>
+        <p>
+            © Елизавета Задорожняя, 2022-2023
+        </p>
+        <div class="social">
+        <a href="https://vk.com/liza_zadorozhnyaya">
+            <img src="vk.png" alt="">
+        </a>
+        <a href="https://t.me/l_z2007">
+            <img src="tg.png" alt="">
+        </a>
+        </div> 
+    </footer>
+</body>
+</html>

@@ -5,11 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>robots</title>
+    <link rel="stylesheet" href="style.css">
 <style>
-    @font-face {
-        font-family: 'Onest Black';
-        src: url(ofont.ru_Onest.ttf);
-    }
     header{
         background-color: rgb(5, 2, 21);
         background-image: url(1.png);
@@ -18,9 +15,6 @@
         background-repeat: no-repeat;
         background-position: 40% 0; 
         background-size: auto 100%;
-    }
-    body{
-        margin: 0;
     }
     .polosa {
         width: 2%;
@@ -114,6 +108,9 @@
     .block1{
         display: flex;
     } 
+    .mainMenu *{
+        text-decoration: none;
+    }
     @media (max-width:1000px){
         .block1{
             flex-wrap: wrap-reverse;
@@ -153,9 +150,19 @@
         }
         .mainMenu{
         background: linear-gradient(#90d2e8, rgb(13, 5, 58));
+        flex-direction: column;
+        height: fit-content;
+        padding-bottom: 20%;
+        }
+        .mainMenu figure{
+            width: 90%;
+            padding-top: 30%;
+        }
+        .mainMenu figure figcaption{
+            font-size: 7vw;
+            margin-top: 0;
+        }
     }
-    }
-    
 </style>
 </head>
 <body>
@@ -178,27 +185,47 @@
             которые не будут допускать ошибок в своей работе. </p>
         </div>
     </div>
-    <main>
+    <main id="home">
         <div class="mainMenu">
             <figure> 
+                <a href="biop.html">
                 <img src="биопринте.png" alt="">
                 <figcaption>БИОПРИНТЕР</figcaption>
+            </a>
             </figure>
             <figure>
+                <a href="psih.html">
                 <img src="психолог киробо.png" alt="">
                 <figcaption>ПСИХОЛОГ</figcaption>
+                </a>
             </figure>
             <figure>
+                <a href="stom.html">
                 <img src="стоматолог.png" alt="">
                 <figcaption>СТОМАТОЛОГ</figcaption>
+            </a>
             </figure>
             <figure>
+                <a href="hir.html">
                 <img src="хирург.png" alt="">
                 <figcaption>ХИРУРГ</figcaption>
+                </a>
             </figure>
         </div>
 
     </main>
-    
+    <footer>
+        <p>
+            © Елизавета Задорожняя, 2022-2023
+        </p>
+        <div class="social">
+        <a href="https://vk.com/liza_zadorozhnyaya">
+            <img src="vk.png" alt="">
+        </a>
+        <a href="https://t.me/l_z2007">
+            <img src="tg.png" alt="">
+        </a>
+        </div> 
+    </footer>
 </body>
 </html>
