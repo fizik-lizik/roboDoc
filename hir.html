@@ -60,14 +60,17 @@
             background-color: rgb(5, 2, 21);
             margin: 5vh;
         }
-        .circle dl{
+        .circle div{
+            width: 45%;
+            background-color: #03b6ce;
+            padding: 0px 0 5px 10px;
+        }
+        .circle div h2{
             background-color: #03b6ce;
             transform: scale(0.9);
+            margin-top: 20px;
         }
-        .circle dt{
-            padding: 30px  ;
-            font-family:  'Onest Black';
-        }
+        
         .stroenie{
             margin-top: 8%;
             margin-bottom: 10%;
@@ -86,24 +89,29 @@
         .stroenie img{
             display: block;
             /* margin-left: auto; */
-            margin-right: auto;
+            /* margin-right: auto; */
             width: 50vw;
-            margin-left: 50px;
+            /* margin-left: 50px; */
         }
         .stroenie div{
             display: flex;
+            justify-content: space-between;
             transform: scale(0.9);
             font-size: 28px;
             font-family:  'Onest Bold';
-            margin: 5vh;
+            /* margin: 5vh; */
             align-items: center;
-            margin-right: 20px;
+            /* margin-right: 20px; */
         }
         .stroenie p{
-            padding: 10px 10px 10px 10px;
+            width: 40vw;
+            padding: 50px 50px 50px 50px;
             background-color: #6cc3f5 ;
         }
-        @media (max-width:475px){
+        .circle{
+                flex-wrap: wrap-reverse;
+            }
+        @media (max-width:1000px){
             main{
                 flex-direction: column;
                 padding: 40px 0 20px 0;
@@ -121,6 +129,40 @@
             }
             header img{
                 transform: scale(0.75);
+            }
+            .circle div{
+                width: 90%;
+                margin: 30px auto;
+                font-size: 15px;
+            }
+            .circle img{
+                width: 90%;
+                margin:  auto;
+            }
+            .stroenie div{
+                flex-wrap: wrap;
+                font-size: 15px;
+            }
+            .stroenie div:last-child{
+                flex-wrap: wrap-reverse;
+            }
+            .stroenie div p{
+                width: 90%;
+                margin: 0px auto;
+                margin-bottom: 10px;
+                padding: 10px 10px 10px 10px;
+            }
+            .stroenie div img{
+                width: 90%;
+                margin: 10px auto;
+            }
+            footer p{
+            font-size: 20px;
+            }
+            footer .social {
+                padding-right: 5px;
+                margin-left: auto;
+                width: 64px;
             }
         }
     </style>
@@ -142,17 +184,18 @@
     <section class="circle">
         <img src="хирург3.png" alt="">
         
-          <dl>
-            <dt>Преимущества робота-хирурга: </dt>
-            <dd>Большая хирургическая точность</dd>
-            <dd>Лучшая визуализация, включая труднодоступные области</dd>
-            <dd>Увеличенный диапазон движения</dd>
-            <dd>Контроль усталости рук</dd>
-            <dd>Меньшее количество осложнений</dd>
-            <dd>Быстрое восстановление после операции</dd>
-            <dd>Доступ к труднодоступным областям</dd>
-            <dt></dt>
-          </dl>
+          <div>
+            <h2>Преимущества робота-хирурга: </h2>
+            <ul>
+            <li> Большая хирургическая точность
+            <li>Лучшая визуализация, включая труднодоступные области
+            <li>Увеличенный диапазон движения
+            <li>Контроль усталости рук
+            <li>Меньшее количество осложнений
+            <li>Быстрое восстановление после операции
+            <li>Доступ к труднодоступным областям
+            </ul>
+          </div>
     </section>
     <section class="stroenie">
         <h2>Строение робота</h2>
