@@ -65,8 +65,70 @@
             transform: scale(0.9);
             margin-top: 20px;
         }
-        @media (max-width:475px){
-            
+        .universe{
+            background-image: url(небо2.jpg);
+            background-size: cover;
+            display: flex;
+            margin: 5vh;
+            padding-right: 50px;
+            padding-top: 50px;
+            justify-content: space-between;
+            padding-bottom: 50px;
+        }
+        .universe div{
+            width: 30%;
+            padding-right: 70px;
+        }
+        .universe img{
+            width: 100%;
+        }
+        .universe p{
+            width: 50%;
+            font-size: 20px;
+            font-family:  'Onest Bold';
+            color: white;
+            padding-left: 50px;
+            line-height: 150%;
+        }
+        .universe a{
+            color: #fda340;
+        }
+        
+        @media (max-width:1000px){
+            main{
+                flex-direction: column;
+                height: fit-content;
+            }
+            main img{
+                width: 90%;
+            }
+            .circle2 div{
+                width: 90%;
+                margin: 30px auto;
+                font-size: 15px;
+            }
+            .circle2 img{
+                width: 90%;
+                margin:  auto;
+            }
+            .universe{
+                flex-direction: column;
+            }
+            .universe p {
+                width: 90%;
+                padding: 0;
+                margin: auto;
+                margin-right: 7%;
+                padding-left: 7%;
+            }
+            .universe div{
+                width: 70%;
+                margin: 10% auto;
+                padding-left: 20%;
+            }
+            .circle2{
+                flex-wrap: wrap-reverse;
+            }
         }
     </style>
 </head>
@@ -96,6 +158,27 @@
             <li>Автоматическая обработка естественного языка
             </ul>
           </div>
+    </section>
+    <section class="universe">
+        <p>
+            Робот высотой всего 34 сантиметра выполнен в полном соответствии с человеком. 
+            Его основное предназначение связано с общением. Робот Киробо разговаривает, отвечает 
+            на вопросы и понимает все, что ему было сказано.
+            На сегодняшний день робот наделен искусственным интеллектом, благодаря этому он 
+            отлично понимает человеческую речь. Встроенная система распознает людей, с которыми 
+            уже общался робот, запоминает их эмоции, жесты и мимику. 
+            Киробо выполнял роль робота-компаньона японского астронавта Коити Ваката, который 
+            осуществлял свою космическую миссию в 2013-14 годах.
+            Киробо был дважды внесён в 
+            <a href="https://robogeek.ru/chelovekopodobnye-roboty/robot-kosmonavt-kirobo-popadaet-v-knigu-rekordov-ginnesa">
+                Книгу рекордов Гиннесса</a>, 
+            во-первых, в качестве первого 
+            робота-компаньона в космосе и, во-вторых, в качестве робота, осуществляющего связь с 
+            Землёй с самой большой высоты.
+        </p>
+        <div>
+        <img src="психолог.png" alt="">
+        </div>
     </section>
     <footer>
         <p>

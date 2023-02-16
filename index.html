@@ -111,7 +111,18 @@
     .mainMenu *{
         text-decoration: none;
     }
+    .hand{
+        position: absolute;
+        border-radius: 50%;
+        top: 3%;
+        left: 73%;
+        width: 10%;
+        z-index: 1;
+    }
     @media (max-width:1000px){
+        .hand{
+            display: none;
+        }
         .block1{
             flex-wrap: wrap-reverse;
             /* flex-direction: column; */
@@ -162,10 +173,24 @@
             font-size: 7vw;
             margin-top: 0;
         }
+        #home{
+            position: static;
+            height: fit-content;
+        }
+        footer p{
+            font-size: 20px;
+            }
+        footer .social {
+            padding-right: 5px;
+            margin-left: auto;
+            width: 64px;
+        }
     }
 </style>
 </head>
 <body>
+    <img class="hand" src="fdfddf.jpg" alt="">
+
     <div class="block1">
     <header>
         
