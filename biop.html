@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Робот-биопринтер</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon-robots-3_98540.ico">
+    <script>
+        function anim(){
+            if(document.querySelector(".tech").getBoundingClientRect().top <100){
+                document.querySelector(".tech .txt p").classList.add("techanim")
+            }
+        }
+    </script>
     <style>
         header{
             display: flex;
@@ -95,7 +103,7 @@
             padding-top: 5%;
             text-align: center;
             font-size: 20px;
-            color: #121a0b);
+            color: #121a0b;
             font-family: 'Onest Black'  ;
         }
         .card3 h1{
@@ -119,6 +127,92 @@
             line-height: 150%;
             padding-left: 10%;
         }
+        .tech{
+            background-image: url(220601171740-01-3d-printed-organs.jpg);
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
+        /* .tech:after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background:#000;
+            opacity:0.6;
+        } */
+        .tech .txt{
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.548);
+            /* display: flex;
+            justify-content: center; */
+            text-align: center;
+            line-height: 170%;
+            font-size: 24px;
+            font-family: 'Onest Black';
+            color: white;
+            padding-top: 45vh;
+            overflow: hidden;
+        }
+        .tech .txt h1{
+            margin: auto;
+        }
+        .tech .txt p{
+            transform:translateY(60vh);
+        }
+        .techanim{
+            animation: up 2s forwards;
+        }
+        @keyframes up{
+            from{
+                transform: translateY(60vh);
+            }
+            to{
+                transform: translateY(10vh);
+            }
+        }
+        /* .pictures{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Onest Bold';
+        }
+        .pictures div{
+            width: 35%;
+        }
+        .pictures img{
+            width: 13vw;
+            margin-bottom: 20px;
+        }
+        .pictures figure{
+            text-align: center;
+            padding: 20px;
+        }
+        .ear{
+            width: 7vw !important; 
+        }
+        .txt{
+            border: 10px solid #90d2e8;
+            height: 14vw;
+            text-align: center;
+            line-height: 170%;
+            font-size: 24px;
+            font-family: 'Onest Black';
+            padding-left: 20px;
+            padding-right: 20px;
+        } */
+        /* .pictures figure:nth-child(1){
+            background-color: #73a645;
+        }
+        .pictures figure:nth-child(2){
+            background-color: #ddc33f;
+        }
+        .pictures div:nth-child(2) figure{
+            background-color: #ca4919;
+        } */
         @media (max-width:475px){
             main{
                 flex-direction: column;
@@ -138,10 +232,84 @@
             header img{
                 transform: scale(0.75);
             }
+        .cards{
+            position: relative;
+            width: auto;
+            /* height: 100vh; */
+            background-color: rgb(5, 2, 21);
+            margin-bottom: 5%;
+            margin-top: 5%;
+            overflow: auto;
+        }
+        .card2{
+            position: static;
+            width: 90%;
+            /* top: 15%;
+            left: 40%;  */
+            border-radius: 10px;
+            border: #ddc33f 15px solid;
+            margin-top: 4vw;
+            margin-bottom: 4vw;
+        }
+        .card1{
+            position: static;
+            width: 90%;
+            border-radius: 10px;
+            transform: rotate(0);
+            /* top: 23%;
+            left: 12%; */
+            background-color: #73a645;
+            /* height: 75vh;
+            z-index: 2; */
+            border: #73a645 15px solid;
+            margin-top: 4vw;
+            margin-bottom: 4vw;
+        }
+        .cards h1{
+            padding-top: 5%;
+            text-align: center;
+            font-size: 10px;
+            color: #121a0b;
+            font-family: 'Onest Black'  ;
+        }
+        .card3{
+            position: static;
+            width: 90%;
+            border-radius: 10px;
+            transform: rotate(0);
+            /* top: 23%;
+            right: 5%; */
+            background-color: #ca4919;
+            /* height: 75vh;
+            z-index: 0; */
+            border-radius: 10px;
+            border: #ca4919 15px solid;
+            margin-top: 4vw;
+            margin-bottom: 4vw;
+        }
+        .tech{
+            width: 100%;
+            height: auto;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow: auto;
+        }
+        .tech .txt{
+            height: 150vh;
+            background-color: rgba(0, 0, 0, 0.548);
+            text-align: center;
+            line-height: 170%;
+            font-size: 24px;
+            font-family: 'Onest Black';
+            color: white;
+            padding-top: 7%;
+            overflow: auto;
+        }
         }
     </style>
 </head>
-<body>
+<body onscroll="anim()">
     <header>
         <a href="index.html#home">
             <img src="robot1.png" alt="">
@@ -192,6 +360,60 @@
             </p>
         </div>
     </section>
+    <section class="tech">
+    <div class="txt">
+        <h1>
+            Внедрение технологий биопринтинга в жизнь людей
+        </h1>
+        <p>
+            В области гастрономии в России технологии 3D-биопринтера были использованы шеф-поварами Анатолием и Иваном Березуцкими,
+            так в ресторане Twins Garden был изготовлен кальмар. В 2017 году в Китае детям с врождённым дефектом уха 
+            пересадили 3D-печатные уши. Российская лаборатория «3Д Биопринтинг Солюшенс» впервые в мире напечатала щитовидную железу.
+            На конференции TED-2011 3D-биопринтер напечатал макет человеческой почки во время выступления американского хирурга и 
+             Энтони Аталы
+        </p>
+    </div>
+    </section>
+    <section class="text">
+        
+    </section>
+    <!-- <section class="pictures">
+        <div class="first">
+            <figure>
+                <img src="кальмар.png" alt="">
+                <figcaption>
+                    В области гастрономии в России технологии 3D-биопринтера были использованы шеф-поварами Анатолием и Иваном Березуцкими,
+                    так в ресторане Twins Garden был изготовлен кальмар.
+                </figcaption>
+            </figure>
+            <figure>
+                <img class="ear" src="ухо.png" alt="">
+                <figcaption>
+                    В 2017 году в Китае детям с врождённым дефектом уха пересадили 3D-печатные уши.
+                </figcaption>
+            </figure>
+        </div>
+        <div class="txt">
+            <h1> 
+                Внедрение технологий биопринтинга в жизнь людей
+            </h1>
+        </div>
+        <div class="last">
+            <figure>
+                <img src="мышь.png" alt="">
+                <figcaption>
+                    Российская лаборатория «3Д Биопринтинг Солюшенс» впервые в мире напечатала щитовидную железу.
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="почка.png" alt="">
+                <figcaption>
+                На конференции TED-2011 3D-биопринтер напечатал макет человеческой почки во время выступления американского хирурга и 
+                 Энтони Аталы
+                </figcaption>
+            </figure>
+        </div>
+    </section> -->
     <footer>
         <p>
             © Елизавета Задорожняя, 2022-2023

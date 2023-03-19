@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Робот-стоматолог</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon-robots-3_98540.ico">
     <style>
         header{
             display: flex;
@@ -54,6 +55,47 @@
             line-height: 250%;
             margin-left: 7%;
         }
+        .gallery{
+            height: fit-content;
+            background-color: #90d2e8;
+            position: relative;
+            margin: 3vw 0;
+            z-index: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 50px;
+        }
+        .polos{
+            width: 100%;
+            height: 40%;
+            background-color: rgb(5, 2, 21);
+            position: absolute;
+            top: 35%;
+            z-index: -1;
+        }
+        .case{
+            width: 45%;
+            height: 90vh;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 0 2%;
+            font-family: "Onest Bold";
+            font-size: 1.3vw;
+            box-shadow: 3px 3px 30px 0 rgb(65, 65, 65);
+        }
+        .case img{
+            width: 100%;
+            height: 30vh;
+            object-fit: cover;
+        }
+        .case2{
+            margin-top: 10%;
+        }
+        .case3{
+            margin-top: 20%;
+        }
         @media (max-width:475px){
             main{
                 flex-direction: column;
@@ -73,6 +115,49 @@
             header img{
                 transform: scale(0.75);
             }
+            .gallery{
+            height: fit-content;
+            background-color: #90d2e8;
+            position: relative;
+            margin: 3vw 0;
+            z-index: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 50px;
+            flex-direction: column;
+        }
+            .case{
+            width: 90%;
+            height: 90vh;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 0 2%;
+            font-family: "Onest Bold";
+            font-size: 3.8vw;
+            box-shadow: 3px 3px 30px 0 rgb(65, 65, 65);
+        }
+        .case img{
+            width: 100%;
+            height: 30vh;
+            object-fit: cover;
+        }
+        .case2{
+            margin-top: 10%;
+        }
+        .case3{
+            margin-top: 20%;
+        }
+        .polos{
+             width: 100vw;
+            height: 40%;
+            background-color: rgb(5, 2, 21);
+            position: absolute;
+            top: 35%;
+            left: 0;
+            z-index: -1;
+        }
         }
     </style>
 </head>
@@ -100,6 +185,40 @@
     </div>
         <img src="стом.png" alt="">
     </main>
+    <section class="gallery">
+        <div class="case1 case">
+            <img src="стом1.jpg" alt="">
+            <p>
+                Ведущим специалистам Израиля удалось создать робота-стоматолога, который профессионально выполняет свои функции. 
+                Так, например, он легко и непринужденно сверлит отверстия в зубах, причем в несколько раз точнее и тщательнее, чем 
+                стоматолог-человек.
+                Чтобы подтвердить профессиональную состоятельность искусственного дантиста, ученые провели соответствующие испытания и 
+                подтвердили возможность использования машины на практике.
+            </p>
+        </div>
+        <div class="case2 case">
+            <img src="стом2.webp" alt="">
+            <p>
+                Робот впервые успешно имплантировал два новых зуба человеку. Устройство справилось с задачей без участия человека.
+                Устройство вставило зубы со стандартной для подобных операций погрешностью в 0,2—0,3 мм. При этом машина корректировала 
+                свою работу, когда пациентка двигалась. Отмечается, что вставные зубы были напечатаны на 3D-принтере.
+            </p>
+        </div>
+        <div class="case3 case">
+            <img src="стом3.jpg" alt="">
+            <p>
+                Робот-ассистированная хирургия быстро становится стандартом качества, предлагая новый уровень комфорта в:
+            </p>
+            <ul>
+                <li> Планировании лечения;</li>
+                <li>Расширенной анатомической визуализации;</li>
+                <li>Тактильной хирургии.</li>
+            </ul>
+        </div>
+        <div class="polos">
+
+        </div>
+    </section>
     <footer>
         <p>
             © Елизавета Задорожняя, 2022-2023
